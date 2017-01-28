@@ -27,14 +27,14 @@ Testnew$SalePrice = NULL
 
 #Creating cross-validation sets
 
-# library(caTools)
-# 
-# set.seed(123)
-# 
-# splittrain = sample.split(Trainnew , SplitRatio = 0.75)
-# 
-# Train1 = subset(Trainnew , splittrain == T)
-# Test1 = subset(Trainnew , splittrain == F)
+library(caTools)
+
+set.seed(123)
+
+splittrain = sample.split(Trainnew , SplitRatio = 0.75)
+
+Train1 = subset(Trainnew , splittrain == T)
+Test1 = subset(Trainnew , splittrain == F)
 
 # Creating a XGboost model
 
